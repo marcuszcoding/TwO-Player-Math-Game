@@ -4,9 +4,10 @@
 # So total we need to access lives/turn, read name, then initalize a name with an @name, @lives and @turn
 
 class Player
-  attr_accessor :lives, :turn
-  attr_reader :name
-   def initialize(name)
+  attr_accessor :lives, :turn # allows read and change of lives/turn
+  attr_reader :name # reads name
+   def initialize(name) # initalize name
+    # setting values
     @name = name
     @lives = 3
     @turn = false
