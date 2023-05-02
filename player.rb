@@ -1,5 +1,5 @@
 class Player
-  attr_accessor :lives, :turn # allows read and change of lives/turn
+  attr_accessor :lives # allows read and change of lives
   attr_reader :name # reads name
    def initialize(name) # initalize name
     # setting values
