@@ -1,5 +1,3 @@
-require './question.rb'
-
 class Game
 
   def initialize
@@ -14,17 +12,17 @@ class Game
 
   def start_game
     while @playerturn.lives > 0 do  # loop until the current turns player has no lives left. 
-      "#{Question.new.ask_a_question(@playerturn)}" #proposes a new question and takes in teh player_turn name
-      puts "P1: #{@player1.lives}/3 VS P2: #{@player2.lives}/3"
+      "#{Question.new.ask_a_question(@playerturn)}" # proposes a new question and takes in teh player_turn name
+      puts "P1: #{@player1.lives}/3 VS P2: #{@player2.lives}/3" # updates player life count after answer
       
-      #check for end of game
+      # checks lives and if 0 ends the game with 2 messages and return
       if @playerturn.lives == 0
         puts "Oh no! #{@playerturn.name} is out of lives :("
         puts "----- GAME OVER -----"
         return
       end
 
-      #after player 1 turn should swap to player 2, if player 2s turn we swap back to player then then puts new turn
+      # after player 1 turn should swap to player 2, if player 2s turn we swap back to player then then puts new turn
       
       if @playerturn == @player1
         @playerturn = @player2
