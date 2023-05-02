@@ -1,11 +1,3 @@
-# Setting up the game
-# 1.) Going to need to require our player and question to make the game
-# 2.) Need to set up a game class that initalizes intro step
-#   - hardcode players to player 1 and 2
-#   - hardcode player turn to always start as player 1 for now
-# 3.) Start the game after initalized. 
-#   - use a loop to check player lives and continue to ask a question to each player then swap turn. 
-#   - on create question player should be prompted for answer from the question class, then based on that we an just put the user lives 
 require './question.rb'
 
 class Game
