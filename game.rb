@@ -22,7 +22,7 @@ class Game
         return
       end
 
-      # after player 1 turn should swap to player 2, if player 2s turn we swap back to player then then puts new turn
+      # swaps player turn after intitial player 1 turn then puts new turn
       
       if @playerturn == @player1
         @playerturn = @player2
