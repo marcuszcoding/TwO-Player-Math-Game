@@ -5,7 +5,11 @@ class Player
     # setting values
     @name = name
     @lives = 3
-    @turn = false
   end
- end
+
+  def loseLife # func for losing a life when answer is wrong
+    @lives -= 1
+  end 
+
+end
  
